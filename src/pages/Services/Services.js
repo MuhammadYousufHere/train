@@ -1,5 +1,5 @@
 import "./Services.scss";
-import countries from "./data";
+import { data } from "./data";
 import world from "../../assets/world.png";
 import world_2 from "../../assets/world_map.jpg";
 const Services = () => {
@@ -10,7 +10,7 @@ const Services = () => {
           <h1>We operate train ticketing services in </h1>
         </div>
         <div className='branches-list'>
-          {countries.map((country, index) => {
+          {data.map((country, index) => {
             return (
               <div className='branch-item' key={index}>
                 <p>{country}</p>
