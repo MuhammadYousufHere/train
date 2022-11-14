@@ -5,8 +5,8 @@ import Destination from '../Destination/Destination';
 import Button from '../../components/Button/Button';
 import Booking from '../Booking/Booking';
 import Modal, { ModalBody } from '../../components/Modal/Modal';
-import Navbar from '../../components/Navbar/Navbar';
-import Sidebar from '../../components/Sidebar/Sidebar';
+// import Navbar from '../../components/Navbar/Navbar';
+// import Sidebar from '../../components/Sidebar/Sidebar';
 import buildings from '../../assets/header-buildings.png';
 import train from '../../assets/header-train.png';
 
