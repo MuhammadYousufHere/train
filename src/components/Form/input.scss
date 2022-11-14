@@ -1,0 +1,41 @@
+@use "../../styles/colors" as *;
+
+.input-group {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0;
+  label {
+    // visibility: hidden;
+    font-size: clamp(1rem, 2vw + 0.44rem, 1.3rem);
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    color: $text-white;
+  }
+  .input-box {
+    display: flex;
+    align-items: center;
+    background-color: $bg-white;
+    margin-top: 5px;
+    svg {
+      margin-right: 0.5rem;
+    }
+    input {
+      padding: 0.8rem 1rem;
+      outline: none;
+      border: none;
+      background-color: $bg-white;
+      width: 100%;
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 28em) {
+  .input-group {
+    margin: 0;
+    input {
+      font-size: 0.8rem !important;
+    }
+  }
+}

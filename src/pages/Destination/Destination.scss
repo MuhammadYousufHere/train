@@ -1,0 +1,62 @@
+@use "../../styles/colors" as *;
+
+.destination-container,
+.form-body {
+  display: flex;
+  align-items: center;
+}
+.destination-container {
+  .destination-body {
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    background: $bg-white;
+    overflow: hidden;
+    margin: 0;
+    .form-body {
+      .left-right {
+        background-color: $bg-primary;
+        padding: 1.35rem 1.6rem;
+
+        svg {
+          font-size: 1.5rem;
+          color: $text-white;
+        }
+      }
+      .seperator {
+        width: 5px;
+        padding: 2rem 1px;
+        background-color: $bg-secondary;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .destination-container {
+    padding: 1.6rem 2.5rem;
+    .destination-body {
+      .form-body {
+        .left-right {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .destination-container {
+    padding: 1.6rem 2rem;
+  }
+}
+@media (max-width: 28em) {
+  .destination-container {
+    padding: 0.6rem 0;
+    .destination-body {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+  }
+  .destination-container .destination-body .form-body .left-right {
+    padding: 0.8rem 1.6rem;
+  }
+}

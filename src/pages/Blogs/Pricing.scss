@@ -1,0 +1,122 @@
+@use "../../styles/colors" as *;
+
+.pricing-container {
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+  .pricing-content {
+    padding: 2rem;
+    .top {
+      h1 {
+        color: $text-main;
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      .pricing-card {
+        width: 33%;
+        background-color: $bg-white;
+        border-radius: 20px;
+        padding: 3rem;
+        .card-content {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 2rem;
+          .block {
+            width: 90px;
+            height: 5px;
+            background: yellow;
+          }
+          .top-row {
+            h1 {
+              color: #2c3e50;
+              font-size: clamp(1.5rem, 0.083rem + 2vw, 5.25rem);
+              position: relative;
+              margin: 0;
+              sup {
+                color: $text-primary;
+                margin: 0;
+                position: absolute;
+              }
+            }
+            h2 {
+              color: $text-primary;
+              font-size: 1.3rem;
+              line-height: 1;
+              margin: 0;
+            }
+          }
+          .bottom-row {
+            h2 {
+              line-height: 1;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .bottom,
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .content {
+        margin: 3rem 0;
+        color: $text-main;
+        flex-direction: column;
+        h2 {
+          font-size: 1.35rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 28em) {
+  .pricing-container {
+    margin: 1rem 0;
+
+    .pricing-content {
+      padding: 1rem;
+      .middle {
+        gap: 2rem;
+        flex-direction: column;
+        .pricing-card {
+          width: 100%;
+
+          padding: 2rem;
+          .card-content {
+            gap: 1.5rem;
+            .block {
+              width: 90px;
+              height: 6px;
+              background: yellow;
+            }
+            h1 {
+              color: #2c3e50;
+              font-size: clamp(1.05rem, 0.083rem + 2vw, 5.25rem);
+
+              sup {
+                color: $text-primary;
+                margin: 0;
+              }
+            }
+            h2:first-of-type {
+              color: $text-primary;
+              font-size: 1.3rem;
+            }
+            h2 {
+              line-height: 1;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

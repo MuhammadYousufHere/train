@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Bowlby One';
+    src: url('BowlbyOne-Regular.eot');
+    src: url('BowlbyOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BowlbyOne-Regular.woff2') format('woff2'),
+        url('BowlbyOne-Regular.woff') format('woff'),
+        url('BowlbyOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bowlby One';
+    src: url('BowlbyOne-Regular_1.eot');
+    src: url('BowlbyOne-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('BowlbyOne-Regular_1.woff2') format('woff2'),
+        url('BowlbyOne-Regular_1.woff') format('woff'),
+        url('BowlbyOne-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

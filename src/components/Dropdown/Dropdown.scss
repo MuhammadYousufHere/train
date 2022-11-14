@@ -1,0 +1,44 @@
+@use "../../styles/colors" as *;
+
+.dropdown-container {
+  background: $bg-white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+  padding: 1rem;
+  position: absolute;
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  .dropdown-content {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding-left: 15px;
+      gap: 1rem;
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: disc;
+        &:hover {
+          color: $text-primary;
+        }
+        a {
+          color: $text-main;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-family: "Montserrat", sans-serif;
+          padding: 0;
+          margin: 0;
+          &:hover {
+            color: $text-primary;
+          }
+        }
+        .active {
+          color: $text-primary;
+        }
+      }
+    }
+  }
+}

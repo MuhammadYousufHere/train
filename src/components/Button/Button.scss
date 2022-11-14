@@ -1,0 +1,61 @@
+@use "../../styles/colors" as *;
+
+.btn {
+  padding: 1.4rem 4rem;
+  border: none;
+  color: $text-white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s all;
+  min-width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  font-family: "Montserrat";
+
+  p {
+    margin: 0;
+    font-size: clamp(0.9rem, 1.0058vw, 1rem);
+    font-weight: 600;
+  }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+.primary {
+  @extend .btn;
+  background-color: $bg-primary;
+}
+.secondary {
+  @extend .btn;
+  background-color: $bg-primary_2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem 4rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+.tertiary {
+  @extend .btn;
+  background-color: $bg-primary_3;
+  padding: 1rem 4rem;
+  border-radius: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 6px 5px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media (max-width: 1024px) {
+  .btn-primary {
+    padding: 1.4rem 3rem;
+
+    p {
+    }
+  }
+}
+@media (max-width: 28em) {
+  .btn {
+    padding: 0.7rem 2rem;
+    p {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+}

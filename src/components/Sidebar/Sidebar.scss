@@ -1,0 +1,64 @@
+@use "../../styles/colors" as *;
+
+.sidebar-container {
+  background-color: $bg-white;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 43545;
+  .sidebar-content,
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-content {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 70%;
+    ul {
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 0;
+    }
+
+    span,
+    a,
+    li {
+      list-style-type: none;
+      font-size: 1rem;
+      color: $text-tertiary;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    li:hover,
+    a:hover {
+      color: $text-primary;
+    }
+    .dropdown {
+      .dropdown-list {
+        margin-left: 30px !important;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        li {
+          list-style: disc;
+          a {
+            letter-spacing: 0;
+          }
+        }
+      }
+
+      .head {
+        svg {
+          margin-left: 0.4rem;
+          color: $text-main;
+        }
+      }
+    }
+    .action {
+      margin: 3rem 0 0 0;
+    }
+  }
+}

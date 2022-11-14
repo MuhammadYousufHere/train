@@ -1,0 +1,119 @@
+@use "../../styles/colors" as *;
+
+$padding-xxl: 6rem 6.5rem;
+$padding-xx: 4rem 2.5rem;
+$padding-sm: 2rem 2.5rem;
+.showcase-container,
+.showcase-body,
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: inherit;
+}
+.showcase-container {
+  background: $bg-lightest;
+  padding: $padding-xxl;
+  .showcase-body {
+    gap: 2rem;
+  }
+  .card-container {
+    padding: 2rem 1rem;
+    background-color: $bg-white;
+    border-radius: 2vmax;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    min-width: calc((100% - 1rem) / 2.5);
+    .card-body {
+      flex-direction: column;
+      padding: 0rem 1rem;
+      gap: 2rem;
+
+      max-width: 100%;
+      margin: 1rem 0;
+      .avatar {
+        width: clamp(120px, 8vw + 1.6rem, 300px);
+        height: clamp(120px, 8vw + 1.6rem, 300px);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .punchline-box {
+        h1 {
+          font-size: clamp(1rem, 1vw + 0.6rem, 1.2rem);
+          margin: 0;
+          padding: 0;
+          color: $text-primary_2;
+          font-weight: 900;
+          line-height: 1.5;
+          text-transform: uppercase;
+        }
+      }
+      .tag-details {
+        p {
+          margin: 0;
+          padding: 0;
+          font-size: clamp(1rem, 1.0858vw, 1.25rem);
+          font-weight: 500;
+          color: $text-tertiary;
+          line-height: 1;
+        }
+        .last {
+          visibility: hidden;
+          &:first-of-type {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .showcase-container {
+    padding: $padding-xx;
+  }
+  .showcase-container,
+  .showcase-body {
+    .card-container {
+      padding: 1.5rem 1rem;
+      max-width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 280px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .showcase-container {
+    padding: $padding-xx;
+  }
+  .showcase-container,
+  .showcase-body {
+    flex-wrap: wrap;
+    .card-container {
+      padding: 1.5rem 0.6rem;
+    }
+  }
+}
+@media (max-width: 464px) {
+  .showcase-container {
+    padding: $padding-sm;
+    .showcase-body {
+      gap: 1rem;
+    }
+  }
+  .showcase-container,
+  .showcase-body {
+    flex-wrap: wrap;
+    gap: 1rem;
+    .card-container {
+      padding: 1rem 0.6rem;
+      .card-body {
+        min-width: 280px;
+      }
+    }
+  }
+}

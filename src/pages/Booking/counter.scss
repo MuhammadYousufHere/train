@@ -1,0 +1,32 @@
+@use "../../styles/colors" as *;
+.counter-content {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  .count {
+    min-width: 25px;
+    text-align: center;
+  }
+  .dec,
+  .inc {
+    background-color: $bg-primary;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 100%;
+    margin: 0;
+    background-color: $bg-primary;
+    svg {
+      margin: 0;
+      font-size: 10px;
+      color: $text-white;
+    }
+  }
+}

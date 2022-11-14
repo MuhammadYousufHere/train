@@ -1,0 +1,53 @@
+@use "../../styles/colors" as *;
+.blogs-container {
+  .blog-content {
+    padding: 2rem 5.6rem;
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      .left {
+        background-color: #fcfcfc;
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 3rem;
+        color: $text-main;
+      }
+      .right {
+        background: url("../../assets/rect.png");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+      }
+    }
+    .bottom {
+    }
+  }
+}
+
+@media screen and (max-width: 28em) {
+  .blogs-container {
+    .blog-content {
+      padding: 2rem 2rem;
+      .top {
+        flex-direction: column;
+        gap: 3rem;
+        .left {
+        }
+        .right {
+        }
+      }
+      .bottom {
+      }
+    }
+  }
+}

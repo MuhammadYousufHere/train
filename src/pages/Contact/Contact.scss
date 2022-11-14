@@ -1,0 +1,139 @@
+@use "../../styles/colors" as *;
+$radius: 0.35rem;
+$padding-xxl: 3rem 6.6rem;
+$padding-xl: 3rem 3.6rem;
+$padding-sm: 3rem 2rem;
+.contact-form,
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form {
+  padding: $padding-xxl;
+  background-color: #f9f9f9;
+  .contact-form_content {
+    background-color: $bg-white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    padding: 3rem 3rem 2rem 3rem;
+    border-radius: 6px;
+    .headings {
+      text-align: center;
+      font-family: "Montserrat";
+      color: $text-main;
+      h1 {
+        font-weight: 600;
+        margin: 0;
+        font-family: inherit;
+        font-size: clamp(1.2rem, 0.083rem + 2.7vw, 2.25rem);
+      }
+      h3 {
+        margin: 0;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: clamp(0.8rem, 0.083rem + 1.7vw, 1.25rem);
+      }
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        color: $text-main;
+        font-size: clamp(0.8rem, 0.083rem + 1.7vw, 0.9rem);
+        font-family: "Montserrat";
+        font-weight: 600;
+        margin-left: 6px;
+      }
+      input {
+        background-color: #f9f9f9;
+        padding: 0.6rem 1rem;
+        border-radius: $radius;
+        border: 2px solid rgb(210, 206, 206);
+        margin-top: 0.3rem;
+        font-family: "Montserrat";
+        font-size: 0.9rem;
+        font-weight: 400;
+
+        &:focus {
+          border-color: rgb(0, 145, 255);
+        }
+      }
+    }
+    .row {
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0.5rem 0;
+    }
+    .bottom {
+      textarea {
+        width: 100%;
+        background: #f9f9f9;
+        border: 2px solid rgb(210, 206, 206);
+        border-radius: $radius;
+        margin-top: 0.3rem;
+        padding: 0.6rem 1rem;
+        font-family: "Montserrat";
+        &:focus {
+          border-color: rgb(0, 145, 255);
+        }
+      }
+    }
+    .submit-box {
+      justify-content: flex-end;
+      display: flex;
+    }
+    .t-n-c {
+      width: 40%;
+      font-family: "Montserrat";
+      font-size: 0.9rem;
+      a {
+        color: $text-primary;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-form {
+    padding: $padding-xl;
+
+    .contact-form_content {
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    .contact-form_content {
+      padding: 1rem;
+      .t-n-c {
+        width: 100%;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 28em) {
+  .contact-form {
+    padding: $padding-sm;
+    .contact-form_content {
+      padding: 1.2rem;
+      .row {
+        flex-direction: column;
+      }
+      .t-n-c {
+        font-size: 0.75rem;
+      }
+      .submit-box {
+        justify-content: center;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

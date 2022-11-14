@@ -1,0 +1,35 @@
+@use "../../styles/colors" as *;
+
+.tours-container {
+  .tours-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .top {
+      text-align: center;
+      h1 {
+        color: $text-main;
+      }
+    }
+    .middle {
+      display: flex;
+      gap: 0.6rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .tours-card {
+        border: 1.5px solid rgb(242, 233, 233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 190px;
+        max-height: 110px;
+      }
+    }
+    .bottom {
+      margin: 2rem 0;
+    }
+  }
+}
