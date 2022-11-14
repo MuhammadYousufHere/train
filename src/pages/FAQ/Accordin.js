@@ -9,9 +9,9 @@ function Accordion(props) {
   const content = useRef(null);
   const [height, setHeight] = useState("0px");
 
-  useEffect(() => {
-    console.log("Height for ", props.title, ": ", height);
-  }, [height]);
+  // useEffect(() => {
+  //   console.log("Height for ", props.title, ": ", height);
+  // }, [height]);
 
   function toggleAccordion() {
     setActive(!active);
