@@ -1,17 +1,17 @@
 import "./Partners.scss";
 
-import data from "./data";
+import { data } from "./data";
 import Glide from "../../components/Glide/Glide";
 
 const Partners = () => {
   return (
-    <main className="partners-container">
-      <div className="heading">
+    <main className='partners-container'>
+      <div className='heading'>
         <h1>These are the train operators</h1>
         <h1> we work with</h1>
       </div>
-      <div className="slider-container">
-        <div className="slider-body">
+      <div className='slider-container'>
+        <div className='slider-body'>
           <Glide
             settings={{
               glideToShow: 3,
@@ -30,7 +30,7 @@ const Partners = () => {
             {data.map((item) => {
               return (
                 <div
-                  className="partner-card"
+                  className='partner-card'
                   key={item.title}
                   style={{ textAlign: "center" }}
                 >

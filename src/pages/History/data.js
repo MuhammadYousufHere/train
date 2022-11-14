@@ -38,4 +38,5 @@ export const data = {
   endline,
   details,
   cardData,
+  bullets_2,
 };

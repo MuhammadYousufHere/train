@@ -3,7 +3,7 @@ import sjSweden from "../../assets/sj-sweden.png";
 import DSB_Denmark from "../../assets/DSB-Denmark.png";
 import Eurostar from "../../assets/Eurostar.png";
 import Belg from "../../assets/sncb-belgium.png";
-export default [
+export const data = [
   { id: 1, imgSrc: DSB_Denmark, to: "/", title: "DSB Denmark" },
   { id: 3, imgSrc: thales, to: "/", title: "Thalys" },
   { id: 2, imgSrc: sjSweden, to: "/", title: "SJ Sweden" },
@@ -14,5 +14,4 @@ export default [
   { id: 7, imgSrc: DSB_Denmark, to: "/", title: "DSB Denmark" },
   { id: 8, imgSrc: sjSweden, to: "/", title: "SJ Sweden" },
   { id: 9, imgSrc: DSB_Denmark, to: "/", title: "DSB Denmark" },
-
 ];
