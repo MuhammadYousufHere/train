@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "../../components/Button/Button";
-import { tours } from "./data";
-import "./Tours.scss";
+import React from 'react';
+import Button from '../../components/Button/Button';
+import { tours } from './data';
+import './Tours.scss';
 const Tours = () => {
   return (
     <div className='tours-container'>
@@ -12,14 +12,23 @@ const Tours = () => {
         <div className='middle'>
           {tours.map((item) => {
             return (
-              <div className='tours-card' key={item.id}>
-                <img src={item.url} alt='partner' />
+              <div
+                className='tours-card'
+                key={item.id}
+              >
+                <img
+                  src={item.url}
+                  alt='partner'
+                />
               </div>
             );
           })}
         </div>
         <div className='bottom'>
-          <Button title='View Pricing' />
+          <Button
+            title='View Pricing'
+            varient='pricing'
+          />
         </div>
       </div>
     </div>

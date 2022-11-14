@@ -20,6 +20,8 @@
         background-color: $bg-white;
         border-radius: 20px;
         padding: 3rem;
+        border:2px solid $text-primary;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         .card-content {
           text-align: center;
           display: flex;

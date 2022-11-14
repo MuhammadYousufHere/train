@@ -27,7 +27,7 @@ $padding-xx: 0.8rem 2.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 3.5rem;
+      gap: 2rem;
       margin: 0;
 
       li {
@@ -37,6 +37,13 @@ $padding-xx: 0.8rem 2.5rem;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
+        padding: 0.4rem;
+        
+        &:hover {
+          background: #faf8f5;
+          border-radius: 6px;
+          
+        }
         svg {
           margin-left: 5px;
         }

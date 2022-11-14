@@ -1,7 +1,7 @@
-import React from "react";
-import PricingCard from "./PricingCard";
-import "./Pricing.scss";
-import Button from "../../components/Button/Button";
+import React from 'react';
+import PricingCard from './PricingCard';
+import './Pricing.scss';
+import Button from '../../components/Button/Button';
 const Pricing = () => {
   return (
     <div className='pricing-container'>
@@ -17,7 +17,10 @@ const Pricing = () => {
         <div className='bottom'>
           <div className='content'>
             <h2>Compare Pricing and Feature Differences HERE</h2>
-            <Button title='View Pricing' />
+            <Button
+              title='View Pricing'
+              varient='pricing'
+            />
           </div>
         </div>
       </div>

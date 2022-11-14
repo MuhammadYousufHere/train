@@ -25,12 +25,25 @@
   @extend .btn;
   background-color: $bg-primary;
 }
+.submit {
+  @extend .btn;
+  background-color: $bg-primary;
+  padding: 0.9rem 2rem
+}
 .secondary {
   @extend .btn;
   background-color: $bg-primary_2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 1rem 4rem;
   border-radius: 12px;
+  margin: 1rem 0;
+}
+.pricing {
+  @extend .btn;
+  background-color: $bg-primary_3;
+  // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.8rem 3rem;
+  border-radius: 7px !important;
   margin: 1rem 0;
 }
 .tertiary {
