@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./Navbar.scss";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import flag from "../../assets/flag.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,7 @@ import {
 import Dropdown from "../Dropdown/Dropdown";
 import { data } from "./data";
 import useOutsideClick from "../../hooks/useOutsideClick";
-import Sidebar from "../Sidebar/Sidebar";
+// import Sidebar from "../Sidebar/Sidebar";
 const Navbar = ({ children, onShowSidebar }) => {
   const [navTop, setNavTop] = useState(0);
   const [showDropdown, setShowDropdown] = useState(false);

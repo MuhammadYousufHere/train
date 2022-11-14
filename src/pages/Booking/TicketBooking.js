@@ -27,51 +27,51 @@ const TicketBooking = () => {
       {(props) => {
         const {
           values,
-          touched,
-          errors,
-          dirty,
-          isSubmitting,
+          // touched,
+          // errors,
+          // dirty,
+          // isSubmitting,
           handleChange,
           handleBlur,
           handleSubmit,
-          handleReset,
+          // handleReset,
         } = props;
         return (
           <form onSubmit={handleSubmit}>
             <UiInput
-              placeholder="type here.."
-              label="Choose a country to visit"
+              placeholder='type here..'
+              label='Choose a country to visit'
               withIcon
-              name="visitCountry"
+              name='visitCountry'
               values={values.country}
               onChange={handleChange}
               onBlur={handleBlur}
             />
             <UiInput
-              placeholder="type here.."
+              placeholder='type here..'
               withIcon
-              name="fromCountry"
-              label="Country of Residence"
+              name='fromCountry'
+              label='Country of Residence'
               values={values.fromCountry}
               onChange={handleChange}
               onBlur={handleBlur}
             />
             <UiInput
-              placeholder="adult(26-59)"
-              label="Age"
-              name="age"
+              placeholder='adult(26-59)'
+              label='Age'
+              name='age'
               values={values.age}
               onChange={handleChange}
               onBlur={handleBlur}
             >
               <Counter />
             </UiInput>
-            <div className="submit-btn">
+            <div className='submit-btn'>
               <Button
-                title="Find My Ticket"
-                borderRadius="0"
-                type="Submit"
-                width="100%"
+                title='Find My Ticket'
+                borderRadius='0'
+                type='Submit'
+                width='100%'
               />
             </div>
           </form>
