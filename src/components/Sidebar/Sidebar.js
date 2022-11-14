@@ -1,7 +1,8 @@
-import { data } from "./data";
-import "./Sidebar.scss";
-import Button from "../Button/Button";
-import Dropdown from "./dropdown";
+import { data } from './data';
+import './Sidebar.scss';
+import Button from '../Button/Button';
+import Dropdown from './dropdown';
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className='sidebar-container'>
@@ -9,12 +10,18 @@ const Sidebar = () => {
         <ul>
           {data.map((item, i) => {
             return (
-              <div className='dropdown' key={i}>
+              <div
+                className='dropdown'
+                key={i}
+              >
                 {item.dropDown ? (
-                  <Dropdown item={item} dropdown={item.dropDown} />
+                  <Dropdown
+                    item={item}
+                    dropdown={item.dropDown}
+                  />
                 ) : (
                   <li>
-                    <a href={item.path}>{item.title}</a>
+                    <Link to={item.path}>{item.title}</Link>
                   </li>
                 )}
               </div>
@@ -22,7 +29,10 @@ const Sidebar = () => {
           })}
         </ul>
         <div className='action'>
-          <Button title='Get in Touch' varient='tertiary' />
+          <Button
+            title='Get in Touch'
+            varient='tertiary'
+          />
         </div>
       </div>
     </div>
