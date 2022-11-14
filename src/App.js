@@ -19,7 +19,7 @@ function App() {
       <ErrorBoundary>
         <ScrollToTop smooth />
         <Navbar onShowSidebar={handleSidebar} />
-        {/* {showSidebar && <Sidebar />} */}
+        {showSidebar && <Sidebar />}
 
         <div className='app'>
           <Routes>
