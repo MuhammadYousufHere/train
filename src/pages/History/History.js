@@ -4,15 +4,15 @@ import about from "../../assets/about-image.png";
 import "./History.scss";
 const History = () => {
   return (
-    <div className="history-container">
-      <div className="history-body">
-        <div className="tagline">
+    <div className='history-container'>
+      <div className='history-body'>
+        <div className='tagline'>
           <h1>Information About Save</h1>
           <h1>A Train</h1>
         </div>
-        <div className="row">
-          <div className="col">
-            <div className="details">
+        <div className='row'>
+          <div className='col'>
+            <div className='details'>
               <p>
                 Save A Train started in 2016, as Millenials and avid travelers,
                 we found it ridiculous that we had to search in many places and
@@ -28,14 +28,14 @@ const History = () => {
               </p>
             </div>
           </div>
-          <div className="col">
+          <div className='col'>
             <figure>
-              <img src={about} alt="save a train" />
+              <img src={about} alt='save a train' />
             </figure>
           </div>
         </div>
-        <div className="bottom">
-          <div className="content">
+        <div className='bottom'>
+          <div className='content'>
             <p>
               We have several key things that we look at when we pick a railway
               partner:

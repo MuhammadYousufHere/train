@@ -12,11 +12,13 @@ import {
 import Dropdown from "../Dropdown/Dropdown";
 import { data } from "./data";
 import useOutsideClick from "../../hooks/useOutsideClick";
-// import Sidebar from "../Sidebar/Sidebar";
-const Navbar = ({ children, onShowSidebar }) => {
+import Sidebar from "../Sidebar/Sidebar";
+const Navbar = () => {
   const [navTop, setNavTop] = useState(0);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showTicket, setShowTicket] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+
   const productRef = useRef();
   const ticketsRef = useRef();
   useOutsideClick(ticketsRef, () => setShowTicket(false));
@@ -31,11 +33,9 @@ const Navbar = ({ children, onShowSidebar }) => {
     }
     prevScrollpos = currentScrollPos;
   };
-  const [showSidebar, setShowSidebar] = useState(false);
 
   const handleSidebar = () => {
     setShowSidebar(!showSidebar);
-    onShowSidebar();
   };
   const handleDropDown = () => {
     setShowDropdown(!showDropdown);
@@ -45,56 +45,59 @@ const Navbar = ({ children, onShowSidebar }) => {
   };
 
   return (
-    <div className='navbar-container' style={{ top: navTop + "px" }}>
-      <nav className='navbar-body'>
-        <div className='logo-box'>
-          <Link to='/' className='logo'>
-            <img src={logo} alt='connecto' />
-          </Link>
-        </div>
-        <div className='mobile'>
-          <div className='flag'>
-            <img src={flag} alt='us' />
+    <>
+      <div className='navbar-container' style={{ top: navTop + "px" }}>
+        <nav className='navbar-body'>
+          <div className='logo-box'>
+            <Link to='/' className='logo'>
+              <img src={logo} alt='connecto' />
+            </Link>
           </div>
-          <div className='burger' onClick={handleSidebar}>
-            <FontAwesomeIcon icon={showSidebar ? faTimes : faBars} />
+          <div className='mobile'>
+            <div className='flag'>
+              <img src={flag} alt='us' />
+            </div>
+            <div className='burger' onClick={handleSidebar}>
+              <FontAwesomeIcon icon={showSidebar ? faTimes : faBars} />
+            </div>
           </div>
-        </div>
-        <ul className='screen'>
-          <li onClick={handleDropDown} ref={productRef}>
-            Products
-            <FontAwesomeIcon icon={faCaretDown} size='xl' />
-            {showDropdown && <Dropdown options={data.products} />}
-          </li>
+          <ul className='screen'>
+            <li onClick={handleDropDown} ref={productRef}>
+              Products
+              <FontAwesomeIcon icon={faCaretDown} size='xl' />
+              {showDropdown && <Dropdown options={data.products} />}
+            </li>
 
-          <li>
-            <Link to='/blogs'>Blogs</Link>
-          </li>
-          <li onClick={showTicketOptions} ref={ticketsRef}>
-            Tickets
-            <FontAwesomeIcon icon={faCaretDown} size='xl' />
-            {showTicket && <Dropdown options={data.tickets} />}
-          </li>
-          <li>
-            <Link to='/contact'>Contact Us</Link>
-          </li>
-          <li>
-            <img src={flag} alt='us' />
-          </li>
-        </ul>
-        <ul className='tab '>
-          <li>
-            <Link href='/'>Login</Link>
-          </li>
-          <li>
-            <Link href='/'>Help</Link>
-          </li>
-          <div className='flag'>
-            <img src={flag} alt='us' />
-          </div>
-        </ul>
-      </nav>
-    </div>
+            <li>
+              <Link to='/blogs'>Blogs</Link>
+            </li>
+            <li onClick={showTicketOptions} ref={ticketsRef}>
+              Tickets
+              <FontAwesomeIcon icon={faCaretDown} size='xl' />
+              {showTicket && <Dropdown options={data.tickets} />}
+            </li>
+            <li>
+              <Link to='/contact'>Contact Us</Link>
+            </li>
+            <li>
+              <img src={flag} alt='us' />
+            </li>
+          </ul>
+          <ul className='tab '>
+            <li>
+              <Link href='/'>Login</Link>
+            </li>
+            <li>
+              <Link href='/'>Help</Link>
+            </li>
+            <div className='flag'>
+              <img src={flag} alt='us' />
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <Sidebar toggle={showSidebar} />
+    </>
   );
 };
 

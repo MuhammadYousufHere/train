@@ -1,0 +1,84 @@
+@use "../../styles/colors" as *;
+.flow-container {
+  background-color: #fafcff;
+  padding: 2rem 4rem;
+  margin: 2rem 0;
+
+  .jumbo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .flow-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0.4rem 0;
+      //   flex-direction: row-reverse;
+      &:nth-child(odd) {
+        // flex-direction: row-reverse;
+      }
+      //   &:nth-child(even) {
+      //     flex-direction: row !important;
+      //   }
+      .left {
+        color: $text-main;
+        max-width: 50%;
+        h1 {
+          padding: 0;
+          color: $text-primary;
+          font-weight: 900;
+          font-family: "Montserrat", sans-serif;
+          font-size: clamp(1.05rem, 0.083rem + 1.7vw, 5.25rem);
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+      .right {
+        .icon-card {
+          background-color: $bg-white;
+          padding: 0.5rem 0;
+          z-index: 432;
+          box-shadow: rgba(0, 180, 255, 0.2) 0px 1px 6px 0px;
+          border-radius: 20px;
+
+          figure {
+            img {
+              width: 90%;
+              height: 90%;
+            }
+          }
+        }
+      }
+    }
+
+    .stare {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      //   margin-top: -1.3rem;
+
+      figure {
+        margin: 0rem 15rem !important;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flow-container {
+    padding: 1.6rem 2.5rem;
+  }
+}
+@media screen and (max-width: 28em) {
+}
+@media screen and (max-width: 28em) {
+}

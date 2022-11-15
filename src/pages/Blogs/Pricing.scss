@@ -20,8 +20,8 @@
         background-color: $bg-white;
         border-radius: 20px;
         padding: 3rem;
-        border:2px solid $text-primary;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: 2px solid $text-primary;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         .card-content {
           text-align: center;
           display: flex;
@@ -79,6 +79,18 @@
   }
 }
 
+@media screen and (max-width: 786px) {
+  .pricing-container {
+    margin: 1rem 0;
+
+    .pricing-content {
+      padding: 1rem;
+      .middle {
+        gap: 2rem;
+      }
+    }
+  }
+}
 @media screen and (max-width: 28em) {
   .pricing-container {
     margin: 1rem 0;

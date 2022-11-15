@@ -45,7 +45,9 @@ const Header = () => {
           </div>
         </div>
         <div className='train-box'>
-          <img src={train} alt='train' />
+          <figure>
+            <img src={train} alt='train' />
+          </figure>
         </div>
       </header>
       <Modal show={showModal} setShow={setShowModal}>

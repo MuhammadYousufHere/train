@@ -34,7 +34,7 @@
 
 @media (max-width: 1024px) {
   .destination-container {
-    padding: 1.6rem 2.5rem;
+    // padding: 1.6rem 2.5rem;
     .destination-body {
       .form-body {
         .left-right {
@@ -46,12 +46,12 @@
 }
 @media (max-width: 768px) {
   .destination-container {
-    padding: 1.6rem 2rem;
+    // padding: 1.6rem 1rem;
   }
 }
 @media (max-width: 28em) {
   .destination-container {
-    padding: 0.6rem 0;
+    // padding: 0.6rem 0;
     .destination-body {
       box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     }

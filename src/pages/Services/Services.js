@@ -1,7 +1,7 @@
 import "./Services.scss";
 import { data } from "./data";
 import world from "../../assets/world.png";
-import world_2 from "../../assets/world_map.jpg";
+import world_2 from "../../assets/world_map.png";
 const Services = () => {
   return (
     <main className='services-container'>

@@ -90,6 +90,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 4rem 2.5rem 2rem 2.5rem !important;
+    gap: 1.5rem;
+  }
+}
 @media (max-width: 768px) {
   .footer-container .footer-content .row ul {
     padding: auto 2.5rem;

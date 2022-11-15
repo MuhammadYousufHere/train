@@ -54,7 +54,7 @@ body,
 }
 
 p {
-  font-size: clamp(1rem, 0.5408rem + 1.0258vw, 1.15rem);
+  font-size: clamp(1rem, 0.5408rem + .0258vw, 1.15rem);
   font-family: 'Montserrat';
   font-weight: 400;
 }

@@ -15,7 +15,9 @@ $padding-sm: 1rem 2rem;
   margin-top: 6.9rem;
   .train-box {
     text-align: right;
-    padding-bottom: 1.6rem;
+    figure {
+      margin-right: -25px !important;
+    }
   }
   .header-content {
     display: flex;
@@ -25,7 +27,6 @@ $padding-sm: 1rem 2rem;
     position: relative;
     .left {
       flex-direction: column;
-      // width: 50%;
       height: 100%;
       justify-content: center;
       display: flex;
@@ -39,11 +40,9 @@ $padding-sm: 1rem 2rem;
           color: $text-white;
           line-height: 1;
           text-transform: uppercase;
-          text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.15);
+          // text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.15);
           &:last-of-type {
             font-size: clamp(2rem, 4vw + 1rem, 8.5rem);
-
-            // color: $text-primary;
           }
         }
       }
@@ -61,15 +60,15 @@ $padding-sm: 1rem 2rem;
         margin: 1rem 0;
       }
       .action-box {
-        margin: 1rem;
         width: 100%;
+        margin: 1rem 0px 0 50px;
       }
     }
     .right {
       position: absolute;
-      right: 0%;
+      right: -2%;
       overflow: hidden;
-      bottom: -21px;
+      bottom: -37px;
       .decorators {
         figure {
           img {
@@ -85,13 +84,25 @@ $padding-sm: 1rem 2rem;
 @media (max-width: 1024px) {
   .header-container {
     margin-top: 5.1rem;
+    .train-box {
+      text-align: right;
+      // padding-bottom: 1.6rem;
+      figure {
+        margin-right: -25px !important;
+        margin-top: -0.1rem;
+        img {
+          width: 75%;
+          height: 75%;
+        }
+      }
+    }
     .header-content {
       align-items: end;
       padding: $padding-xl;
       .left {
-        padding-top: 5rem;
+        padding-top: 4rem;
         .action-box {
-          margin: 1rem 0 0 0;
+          padding-right: 10rem;
         }
         .header-desc {
           margin: 1rem 0;
@@ -100,11 +111,14 @@ $padding-sm: 1rem 2rem;
       .right {
         //   margin-bottom: -1rem;
         bottom: -4%;
+        right: -36.5%;
         .decorators {
-          // img {
-          //   max-width: 95%;
-          //   max-height: 95%;
-          // }
+          figure {
+            img {
+              width: 60%;
+              height: 60%;
+            }
+          }
         }
       }
     }
@@ -119,16 +133,34 @@ $padding-sm: 1rem 2rem;
     .header-content {
       .left {
         z-index: 2;
+        .input-block {
+          padding-right: 18rem;
+          .destination-container .destination-body .form-body {
+            .left-right {
+              padding: 1rem 1.6rem;
+            }
+            .input-group {
+              margin: 0;
+            }
+          }
+        }
+        .action-box {
+          .btn {
+            width: 35% !important;
+            padding: 1.2rem 2rem;
+          }
+        }
       }
       .right {
         position: absolute;
         z-index: 1;
-        right: 0%;
+        right: -65%;
+        // left: 30%;
         .decorators {
           figure {
             img {
-              width: 90%;
-              height: 90%;
+              width: 45%;
+              height: 45%;
             }
           }
         }
@@ -150,20 +182,50 @@ $padding-sm: 1rem 2rem;
     }
     .header-content {
       .left {
+        .action-box {
+          margin: 0.4rem 0px 0 20px;
+
+          .btn {
+            width: 45% !important;
+            padding: 0.95rem 2rem;
+          }
+        }
         z-index: 2;
+        .input-block {
+          padding-right: 2rem;
+          .destination-container .destination-body .form-body {
+            .left-right {
+              padding: 0.7rem 1.6rem;
+            }
+            .input-group {
+              margin: 0;
+              .input-box {
+                margin-top: 0;
+              }
+            }
+          }
+        }
       }
       .right {
-        position: absolute;
-        z-index: 1;
-        // bottom: 0%;
-        right: -14%;
-        margin-bottom: -6px;
+        // right: -73%;
+        left: 37%;
+        bottom: -19px;
+        figure {
+          margin-right: 0 !important;
+          margin-inline-end: 0 !important;
+          img {
+            width: 45% !important;
+            height: 50%;
+          }
+        }
       }
     }
     .train-box {
-      img {
-        width: 100%;
-        height: 100%;
+      figure {
+        img {
+          width: 90%;
+          height: 90%;
+        }
       }
     }
   }

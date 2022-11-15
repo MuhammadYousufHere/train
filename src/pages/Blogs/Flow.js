@@ -1,23 +1,32 @@
-import React from "react";
-
-const Flow = () => {
+import "./Flow.scss";
+import st from "../../assets/stre.png";
+const Flow = ({ data }) => {
   return (
     <div className='flow-container'>
-      <div className='flow-content'>
-        <div className='left'>
-          <h1>No More SpreadSheets</h1>
-          <p>
-            Say goodbye to manual SpreadSheets and offline itineries and hello
-            to complete cloud-based booking and reservation system that
-            digitalise your entire tour business.
-          </p>
-        </div>
-        <div className='right'>
-          <div className='icon-card'>
-            <img src='' alt='' />
+      {data.map((item, idx) => {
+        return (
+          <div key={item.id || idx} className='jumbo'>
+            <main className='flow-content' key={item.id || idx}>
+              <div className='left'>
+                <h1>{item.title}</h1>
+                <p>{item.desc}</p>
+              </div>
+              <div className='right'>
+                <div className='icon-card'>
+                  <figure>
+                    <img src={item.url} alt='g' />
+                  </figure>
+                </div>
+              </div>
+            </main>
+            <div className='stare'>
+              <figure>
+                <img src={st} alt='' />
+              </figure>
+            </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 };
