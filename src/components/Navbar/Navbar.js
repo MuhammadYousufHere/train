@@ -33,9 +33,14 @@ const Navbar = () => {
     }
     prevScrollpos = currentScrollPos;
   };
-
+  const body = window.document.body;
   const handleSidebar = () => {
     setShowSidebar(!showSidebar);
+    if (!showSidebar) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
   };
   const handleDropDown = () => {
     setShowDropdown(!showDropdown);
