@@ -39,8 +39,10 @@ $padding-sm: 1rem 1.5rem 1.5rem 1.5rem;
       .col:last-of-type {
         figure {
           margin: 0;
-          figure {
-          }
+         img {
+          width: 100%;
+          height: 100%;
+         }
         }
       }
     }

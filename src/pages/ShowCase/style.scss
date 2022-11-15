@@ -86,6 +86,7 @@ $padding-sm: 2rem 2.5rem;
   }
 }
 
+
 @media (max-width: 1024px) {
   .showcase-container {
     padding: $padding-xx;
@@ -93,13 +94,18 @@ $padding-sm: 2rem 2.5rem;
   .showcase-container,
   .showcase-body {
     .card-container {
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 0.5rem;
       max-width: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
       min-width: 280px;
     }
+  }
+}
+@media (max-width: 820px) {
+  .showcase-container .showcase-body {
+    gap: 0 !important
   }
 }
 @media (max-width: 768px) {
