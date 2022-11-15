@@ -4,7 +4,7 @@
   background-color: $bg-white;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 43545;
   transition: transform 0.3s ease;
   transform: translateY(-100%);
