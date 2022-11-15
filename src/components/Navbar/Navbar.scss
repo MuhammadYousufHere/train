@@ -111,6 +111,14 @@ $padding-xx: 0.8rem 2.5rem;
     }
   }
 }
+@media (max-width: 820px) {
+  .navbar-container .navbar-body ul {
+    li,
+    a {
+      font-size: 0.7rem !important;
+    }
+  }
+}
 @media (max-width: 768px) {
   .navbar-container {
     padding: 1rem 2.5rem;
