@@ -83,6 +83,12 @@ $padding-sm: 1rem 1.5rem 1.5rem 1.5rem;
     }
   }
 }
+
+@media (max-width: 768px) {
+  .history-container .history-body .row .col:last-of-type figure {
+      height: 300px;
+    }
+}
 @media (max-width: 768px) {
   .history-container {
     padding: $padding-xl;
@@ -107,4 +113,7 @@ $padding-sm: 1rem 1.5rem 1.5rem 1.5rem;
     .history-body .row {
     }
   }
+    .history-container .history-body .row .col:last-of-type figure {
+      height: 100% !important;
+    }
 }

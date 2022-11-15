@@ -1,7 +1,7 @@
-import React from "react";
-import { data } from "./data";
-import about from "../../assets/about-image.png";
-import "./History.scss";
+import React from 'react';
+import { data } from './data';
+import about from '../../assets/about-image.png';
+import './History.scss';
 const History = () => {
   return (
     <div className='history-container'>
@@ -30,7 +30,10 @@ const History = () => {
           </div>
           <div className='col'>
             <figure>
-              <img src={about} alt='save a train' />
+              <img
+                src={about}
+                alt='save a train'
+              />
             </figure>
           </div>
         </div>
