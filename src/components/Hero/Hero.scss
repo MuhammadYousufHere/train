@@ -3,12 +3,8 @@ $padding-xxl: 3rem 5.5rem;
 $padding-xl: 2rem 2.5rem;
 $padding-sm: 1.5rem 1.5rem;
 .hero__container {
-  background: rgb(0, 180, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 180, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: $gradient-var_2;
+  background: $gradient-var_bg;
   margin-top: 7rem;
   .hero__content {
     display: flex;

@@ -13,7 +13,7 @@ $padding-sm: 2rem 2.5rem;
   font-family: inherit;
 }
 .showcase-container {
-  background: $bg-lightest;
+  background: $bg-white;
   padding: $padding-xxl;
   .showcase-body {
     gap: 2rem;
@@ -22,7 +22,7 @@ $padding-sm: 2rem 2.5rem;
     padding: 2rem 1rem;
     background-color: $bg-white;
     border-radius: 2vmax;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     min-width: calc((100% - 1rem) / 2.5);
     .card-body {
       flex-direction: column;
@@ -41,7 +41,7 @@ $padding-sm: 2rem 2.5rem;
       }
       .punchline-box {
         h1 {
-          font-size: clamp(1rem, 1vw + 0.3rem, 1rem);
+          font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
           margin: 0;
           padding: 0;
           color: $text-primary_2;

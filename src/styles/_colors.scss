@@ -15,6 +15,10 @@ $bg-gradientii: linear-gradient(
   rgba(130, 205, 234, 1) 30%,
   rgba(214, 232, 185, 1) 60%
 );
+$gradient-var_2: rgb(0, 180, 255);
+$gradient-var_bg: linear-gradient(90deg,
+  rgba(0, 180, 255, 1) 0%,
+  rgba(255, 255, 255, 1) 100%);
 // ---- TEXT
 $text-white: #fff;
 $text-main: #2c3e50;

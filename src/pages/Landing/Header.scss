@@ -5,9 +5,13 @@ $padding-xxl: 5rem 6.5rem 0 6.5rem;
 $padding-xl: 1rem 2.5rem 2rem 2.5rem;
 $padding-sm: 1rem 2rem;
 .header-container {
-  background: $bg-gradienti;
-  background-image: url("../../assets/header-background-2.png"), $bg-gradientii;
-
+  // background: $bg-gradienti;
+  // background-image: url("../../assets/header-background-2.png"), $bg-gradientii;
+  background: $gradient-var_2;
+  background-image: url("../../assets/header-background-2.png"), $gradient-var_bg;
+  
+    
+// background: rgba(0, 180, 255, 0.1);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
