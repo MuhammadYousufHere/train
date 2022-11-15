@@ -8,6 +8,7 @@
     .top {
       h1 {
         color: $text-main;
+        font-size: clamp(1.25rem, 0.083rem + 2vw, 5.25rem);
       }
     }
     .middle {
@@ -37,7 +38,7 @@
           .top-row {
             h1 {
               color: #2c3e50;
-              font-size: clamp(1.5rem, 0.083rem + 2vw, 5.25rem);
+              font-size: clamp(1.25rem, 0.083rem + 2vw, 5.25rem);
               position: relative;
               margin: 0;
               sup {

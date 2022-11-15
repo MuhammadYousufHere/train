@@ -118,6 +118,44 @@ $padding-xl: 2rem;
       }
       .bottom {
       }
+      .middle {
+        .flow-container {
+          .jumbo {
+            &:nth-of-type(even) {
+              .flow-content {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                gap: 2rem;
+                flex-direction: column;
+                align-items: center;
+                .right {
+                  .icon-card {
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+          .jumbo {
+            &:nth-of-type(odd) {
+              .stare {
+                figure {
+                  img {
+                    transform: scaleY(-1);
+                  }
+                }
+              }
+            }
+          }
+          .jumbo {
+            &:last-of-type {
+              .stare {
+                display: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -10,6 +10,7 @@
       text-align: center;
       h1 {
         color: $text-main;
+        font-size: clamp(1.25rem, 0.083rem + 1.7vw, 3.25rem);
       }
     }
     .middle {
