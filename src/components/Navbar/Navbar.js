@@ -136,7 +136,7 @@ const Navbar = () => {
       </div>
       <Sidebar
         toggle={showSidebar}
-        close={() => setShowSidebar(false)}
+        close={handleSidebar}
       />
     </>
   );
