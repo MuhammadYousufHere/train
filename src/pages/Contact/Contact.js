@@ -6,7 +6,7 @@ import mockup from "../../assets/laptop-mockup-v.png";
 
 const Contact = () => {
   return (
-    <div>
+    <div className='contact-form-page'>
       <Hero
         title={"Get In Touch"}
         desc='How can we help your train travel needs'

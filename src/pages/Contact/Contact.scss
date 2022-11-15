@@ -3,6 +3,18 @@ $radius: 0.35rem;
 $padding-xxl: 3rem 6.6rem;
 $padding-xl: 3rem 3.6rem;
 $padding-sm: 3rem 2rem;
+.contact-form-page {
+  .hero__container {
+    .hero__content {
+      padding-bottom: 0;
+      .right {
+        figure {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
 .contact-form,
 .row {
   display: flex;

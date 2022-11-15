@@ -6,7 +6,7 @@ import Accordion from "./Accordin";
 import { faq } from "./data";
 const FAQ = () => {
   return (
-    <>
+    <div className='faq-box'>
       <Hero title={"FAQ"} desc='Frequently asked question about our platform'>
         <figure>
           <img src={buildings} alt='/' />
@@ -23,7 +23,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
