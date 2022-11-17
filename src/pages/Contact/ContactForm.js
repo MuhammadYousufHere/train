@@ -17,7 +17,7 @@ export const ContactForm = () => {
       <div className='contact-form_content'>
         <div className='headings'>
           <h1>What would you like to say?</h1>
-          <h3>Complete the form below and we'll get back to you soon</h3>
+          <h3>Complete the form below and we'll get back to you.</h3>
         </div>
         <div className='form-section'>
           <Form
