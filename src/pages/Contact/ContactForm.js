@@ -44,7 +44,7 @@ export const ContactForm = () => {
                   <div className='top row'>
                     <Input
                       label='First Name'
-                      placeholder='Enter your first name'
+                      placeholder='Enter your First Name'
                       value={values.firstname}
                       onBlur={handleBlur}
                       name='firstname'
@@ -52,7 +52,7 @@ export const ContactForm = () => {
                     />
                     <Input
                       label='Last Name'
-                      placeholder='Enter your last name'
+                      placeholder='Enter your Last Name'
                       value={values.lastname}
                       name='lastname'
                       onBlur={handleBlur}
@@ -62,7 +62,7 @@ export const ContactForm = () => {
                   <div className='middle row'>
                     <Input
                       label='Your Email'
-                      placeholder='Enter your email address'
+                      placeholder='Enter your Email Address'
                       value={values.email}
                       name='email'
                       onBlur={handleBlur}
@@ -71,7 +71,7 @@ export const ContactForm = () => {
                     />
                     <Input
                       label='Company Name (Optional)'
-                      placeholder='Enter your company name'
+                      placeholder='Enter your Company Name'
                       value={values.company}
                       name='company'
                       onBlur={handleBlur}
@@ -81,7 +81,7 @@ export const ContactForm = () => {
                   <div className='bottom row'>
                     <div className='input-group'>
                       <label htmlFor='message'>
-                        What would you like to say?
+                        What would you like to add?
                       </label>
                       <textarea
                         id='message'
@@ -106,7 +106,7 @@ export const ContactForm = () => {
         <div className='t-n-c'>
           Never submit passwords or credit card information through this form.
           This site is protected by reCAPTCHA and the Google
-          <a href='/'> Privacy Policy</a> and <a href='/'>Terms of Service</a>{" "}
+          <a href='/'> Privacy Policy</a> and <a href='/'>Terms of Service.</a>
           apply
         </div>
       </div>

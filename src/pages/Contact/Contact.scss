@@ -66,14 +66,14 @@ $padding-sm: 3rem 1rem;
         background-color: #f9f9f9;
         padding: 0.9rem 1rem;
         border-radius: $radius;
-        border: 2px solid rgb(210, 206, 206);
+        border: 1.5px solid rgb(210, 206, 206);
         margin: 0.3rem 0;
         font-family: "Montserrat";
         font-size: 0.9rem;
         font-weight: 400;
 
         &:focus-visible {
-          border: 2px solid rgb(0, 145, 255);
+          border: 1.5px solid $bg-primary;
           outline: none;
         }
       }
@@ -87,13 +87,13 @@ $padding-sm: 3rem 1rem;
       textarea {
         width: 100%;
         background: #f9f9f9;
-        border: 2px solid rgb(210, 206, 206);
+        border: 1.5px solid rgb(210, 206, 206);
         border-radius: $radius;
         margin-top: 0.3rem;
         padding: 0.6rem 1rem;
         font-family: "Montserrat";
         &:focus-visible {
-          border: 2px solid rgb(0, 145, 255);
+          border: 1.5px solid $bg-primary;
           outline: none;
         }
       }
@@ -152,6 +152,7 @@ $padding-sm: 3rem 1rem;
         justify-content: center;
         .btn {
           width: 100%;
+          padding: 1.5rem 0;
         }
       }
       .input-group {
