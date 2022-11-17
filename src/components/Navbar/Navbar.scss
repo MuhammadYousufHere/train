@@ -10,6 +10,7 @@ $padding-xx: 0.8rem 2.5rem;
   width: 100%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   z-index: 5523545;
+  transition: all 0.3s ease;
   .navbar-body {
     display: flex;
     align-items: center;
