@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <div className='contact-form-page'>
       <Hero
-        title={"Get In Touch"}
-        desc='How can we help your train travel needs'
+        title="Get In Touch"
+        desc='How can we help your train travel needs?'
       >
         <figure>
           <img src={mockup} alt='mockup' />

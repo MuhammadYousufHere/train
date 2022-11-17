@@ -16,7 +16,11 @@ $padding-xl: 2rem;
         justify-content: space-between;
         flex-direction: column;
         padding: 3rem;
-        color: $text-main;
+
+        h3 {
+          color: $text-main;
+          color: #2c2e2fd4;
+        }
       }
       .right {
         background: url("../../assets/rect.png");

@@ -2,7 +2,7 @@
 $radius: 0.35rem;
 $padding-xxl: 3rem 6.6rem;
 $padding-xl: 3rem 3.6rem;
-$padding-sm: 3rem 2rem;
+$padding-sm: 3rem 1rem;
 .contact-form-page {
   .hero__container {
     .hero__content {
@@ -35,21 +35,26 @@ $padding-sm: 3rem 2rem;
       font-family: "Montserrat";
       color: $text-main;
       h1 {
+        padding: 0 2rem;
         font-weight: 600;
         margin: 0;
         font-family: inherit;
-        font-size: clamp(1.2rem, 0.083rem + 2.7vw, 2.25rem);
+        font-size: clamp(1.6rem, 0.083rem + 2.7vw, 2.25rem);
+        color: $text-light;
       }
       h3 {
         margin: 0;
         font-family: inherit;
         font-weight: 500;
-        font-size: clamp(0.8rem, 0.083rem + 1.7vw, 1.25rem);
+        font-size: clamp(1.1rem, 0.083rem + 1.7vw, 1.25rem);
+        color: $text-lightest;
+        margin: 1rem 0;
       }
     }
     .input-group {
       display: flex;
       flex-direction: column;
+      margin: 0.2rem 0;
       label {
         color: $text-main;
         font-size: clamp(0.8rem, 0.083rem + 1.7vw, 0.9rem);
@@ -59,16 +64,17 @@ $padding-sm: 3rem 2rem;
       }
       input {
         background-color: #f9f9f9;
-        padding: 0.6rem 1rem;
+        padding: 0.9rem 1rem;
         border-radius: $radius;
         border: 2px solid rgb(210, 206, 206);
-        margin-top: 0.3rem;
+        margin: 0.3rem 0;
         font-family: "Montserrat";
         font-size: 0.9rem;
         font-weight: 400;
 
-        &:focus {
-          border-color: rgb(0, 145, 255);
+        &:focus-visible {
+          border: 2px solid rgb(0, 145, 255);
+          outline: none;
         }
       }
     }
@@ -86,8 +92,9 @@ $padding-sm: 3rem 2rem;
         margin-top: 0.3rem;
         padding: 0.6rem 1rem;
         font-family: "Montserrat";
-        &:focus {
-          border-color: rgb(0, 145, 255);
+        &:focus-visible {
+          border: 2px solid rgb(0, 145, 255);
+          outline: none;
         }
       }
     }
@@ -136,6 +143,7 @@ $padding-sm: 3rem 2rem;
       padding: 1.2rem;
       .row {
         flex-direction: column;
+        gap: 0;
       }
       .t-n-c {
         font-size: 0.75rem;
@@ -145,6 +153,8 @@ $padding-sm: 3rem 2rem;
         .btn {
           width: 100%;
         }
+      }
+      .input-group {
       }
     }
   }
