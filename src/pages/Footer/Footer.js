@@ -71,15 +71,39 @@ const Footer = () => {
           </div>
         </div>
         <div className="col right">
+          <div className="nav-tab">
+            <ul>
+              <div className="left-links">
+                <li>
+                  <Link to="/">Login</Link>
+                </li>
+                <li>
+                  <Link to="/">Manage Bookings</Link>
+                </li>
+              </div>
+              <div className="right-links">
+                <li>
+                  <Link to="/">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/">For Business</Link>
+                </li>
+              </div>
+            </ul>
+          </div>
           <div className="back-top">
             <h1 onClick={() => scrollToTop(true)}>Back to Top</h1>
           </div>
           <div className="store">
             <div className="go">
-              <img src={gp} alt="play-store" />
+              <a href="/">
+                <img src={gp} alt="play-store" />
+              </a>
             </div>
             <div className="go">
-              <img src={apple} alt="apple-store" />
+              <a href="/">
+                <img src={apple} alt="apple-store" />
+              </a>
             </div>
             <div className="social-links">
               <h2>Social Media:</h2>
