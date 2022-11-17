@@ -8,10 +8,10 @@ $padding-sm: 1rem 2rem;
   // background: $bg-gradienti;
   // background-image: url("../../assets/header-background-2.png"), $bg-gradientii;
   background: $gradient-var_2;
-  background-image: url("../../assets/header-background-2.png"), $gradient-var_bg;
-  
-    
-// background: rgba(0, 180, 255, 0.1);
+  background-image: url("../../assets/header-background-2.png"),
+    $gradient-var_bg;
+
+  // background: rgba(0, 180, 255, 0.1);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -20,7 +20,9 @@ $padding-sm: 1rem 2rem;
   .train-box {
     text-align: right;
     figure {
-      margin-right: -25px !important;
+      margin-right: -20px !important;
+      margin-bottom: 0;
+      margin-top: 2.5rem;
     }
   }
   .header-content {
@@ -70,27 +72,46 @@ $padding-sm: 1rem 2rem;
     }
     .right {
       position: absolute;
-      right: -6.5%;
+
       overflow: hidden;
-      bottom: -37px;
+      bottom: -45px;
+      right: 0;
       .decorators {
         figure {
+          text-align: right;
+          margin-right: 0;
+          margin-bottom: 0;
           img {
-            width: 90%;
-            height: 90%;
+            width: 80%;
+            height: 80%;
           }
         }
       }
     }
   }
 }
-
+@media (max-width: 1284px) {
+  .header-container {
+    .header-content {
+      .right {
+        .decorators {
+          figure {
+            img {
+              width: 70%;
+              height: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1024px) {
   .header-container {
     margin-top: 5.1rem;
     .train-box {
       text-align: right;
-      // padding-bottom: 1.6rem;
+
       figure {
         margin-right: -25px !important;
         margin-top: -0.1rem;
@@ -113,9 +134,8 @@ $padding-sm: 1rem 2rem;
         }
       }
       .right {
-        //   margin-bottom: -1rem;
-        bottom: -4%;
-        right: -36.5%;
+        bottom: -0.8%;
+
         .decorators {
           figure {
             img {
@@ -141,8 +161,6 @@ $padding-sm: 1rem 2rem;
       .right {
         position: absolute;
         z-index: 1;
-        right: -53%;
-        // left: 30%;
 
         .decorators {
           figure {
@@ -186,8 +204,7 @@ $padding-sm: 1rem 2rem;
       .right {
         position: absolute;
         z-index: 1;
-        right: -65%;
-        // left: 30%;
+
         .decorators {
           figure {
             img {
@@ -204,6 +221,11 @@ $padding-sm: 1rem 2rem;
         height: 100%;
       }
     }
+  }
+}
+@media (max-width: 685px) {
+  .header-container {
+    margin-top: 3.9rem;
   }
 }
 @media (max-width: 28em) {
@@ -243,7 +265,6 @@ $padding-sm: 1rem 2rem;
         }
       }
       .right {
-        // right: -73%;
         left: 37%;
         bottom: -19px;
         figure {
@@ -258,9 +279,7 @@ $padding-sm: 1rem 2rem;
       }
     }
     .train-box {
-      // background: $bg-primary;
       figure {
-        // display: none;
         img {
           width: 90%;
           height: 90%;

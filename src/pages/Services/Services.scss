@@ -40,9 +40,11 @@ $padding-sm: 1rem;
         font-weight: 500;
         background: $bg-overlay;
         padding: 1rem 1.3rem;
-        // min-width: 250px;
+
         max-width: 280px;
+        min-width: 100%;
         text-align: center;
+        word-break: keep-all;
 
         p {
           margin: 0;
