@@ -193,6 +193,12 @@ $padding-sm: 3rem 3.5rem 1rem 3.5rem;
         align-items: center;
         justify-content: center;
       }
+      .right {
+        text-align: center;
+        .store {
+          align-items: center;
+        }
+      }
       .logo-box {
         .nav-mob {
           color: $text-primary;
