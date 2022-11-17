@@ -16,12 +16,15 @@ $bg-gradientii: linear-gradient(
   rgba(214, 232, 185, 1) 60%
 );
 $gradient-var_2: rgb(0, 180, 255);
-$gradient-var_bg: linear-gradient(90deg,
+$gradient-var_bg: linear-gradient(
+  90deg,
   rgba(0, 180, 255, 1) 0%,
-  rgba(255, 255, 255, 1) 100%);
+  rgba(255, 255, 255, 1) 100%
+);
 // ---- TEXT
-$text-white: #fff;
-$text-main: #2c3e50;
+$text-white: #ffffff;
+// $text-main: #2c3e50;
+$text-main: #2c2e2f;
 $text-primary: #00b4ff;
 $text-primary_2: #62c1e9;
 
